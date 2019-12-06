@@ -3,10 +3,16 @@
 ### 基础介绍
 安卓组件化化开发基础库
 
+![宿主首页](https://raw.githubusercontent.com/zz-xlab/xbrick-app/master/pictures/app.png)
+
+
+
 项目使用纯kotlin+mvvm+databinding开发
 
 一个主工程(参考xbrick-app)+多个业务组件(参考xbrick-user)+一个基础服务库(参考xbrick-base)，可打包成一个最终的应用包。
 每个组件单独使用一个git repo。最终在主项目中使用git submodule对业务组件代码进行管理
+
+![用户组件登录页](https://github.com/zz-xlab/xbrick-app/blob/master/pictures/login.png?raw=true)
 
 基于以上步骤可快速复用多个业务模块组合成各有差异，业务模块复用的应用。中正移动端团队已在实际项目中成功运用，此方式比使用一份代码多个app分支的方式更易维护。
 
@@ -28,7 +34,7 @@
 7.通知测试(待实现)
 8.应用内跳转测试(待实现)
 9.模块信息列表(待新增模块构建hash值)
-![实验室](https://raw.githubusercontent.com/zz-xlab/xbrick-app/master/pictures/xlab.png)
+![实验室](https://github.com/zz-xlab/xbrick-app/blob/master/pictures/xlab.png?raw=true)
 
 
 
