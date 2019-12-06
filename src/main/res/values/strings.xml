@@ -1,0 +1,22 @@
+<resources>
+    <string name="unknown_error">未知错误</string>
+    <string name="current_net_working">当前网络环境:</string>
+    <string name="x_lab">XLab</string>
+    <string name="module_info">moduleInfo</string>
+    <string name="lifecycle_proxy">AppInjector</string>
+    <string name="manage_server_address">服务器地址管理</string>
+    <string name="add_server_address">添加地址</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="not_saved">未保存</string>
+    <string name="save_success">保存成功</string>
+    <string name="tip">提示</string>
+    <string name="delete_address_confirm">确定删除地址吗？</string>
+    <string name="delete">删除</string>
+    <string name="open_camera_error">打开相机错误</string>
+    <string name="load_failure_default">加载失败</string>
+    <string name="reload_default">加载失败，点击重试</string>
+    <string name="open_web_page">打开H5</string>
+    <item name="top_bar_right_button" type="id"/>
+
+</resources>

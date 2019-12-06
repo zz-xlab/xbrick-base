@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="addressVm"
+            type="cn.zzstc.lzm.common.ui.vm.AddressListVm" />
+        <variable
+            name="activity"
+            type="cn.zzstc.lzm.common.ui.ServerAddressActivity" />
+    </data>
+
+    <RelativeLayout
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="cn.zzstc.lzm.common.ui.ServerAddressActivity">
+
+        <com.qmuiteam.qmui.widget.QMUITopBar
+            android:id="@+id/labTopbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/qmui_topbar_height" />
+
+        <com.qmuiteam.qmui.widget.QMUIAnimationListView
+            android:onItemLongClick="@{activity::addressLongClick}"
+            android:adapter="@{addressVm.adapter}"
+            android:dividerHeight="1dp"
+            android:divider="@color/c7"
+            android:layout_below="@+id/labTopbar"
+            android:id="@+id/lvLabAddressList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabLabAddAddress"
+            android:onClick="@{activity::click}"
+            android:src="@mipmap/ic_add"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</layout>

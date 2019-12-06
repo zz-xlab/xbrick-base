@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="cn.zzstc.lzm.common.R" />
+
+        <variable
+            name="moduleInfo"
+            type="cn.zzstc.lzm.common.data.bean.ModuleInfo" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/horizontal_margin"
+        android:paddingRight="@dimen/horizontal_margin">
+
+        <TextView
+            android:id="@+id/tvLabModuleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text='@{moduleInfo.moduleName.length()>0?moduleInfo.moduleName:"未知"}'
+            android:textColor="@color/c4"
+            android:textSize="@dimen/t2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvLabModuleHash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvLabModuleName"
+            android:layout_marginTop="5dp"
+            android:text='@{moduleInfo.buildHash.length()>0?"GitHash:"+moduleInfo.buildHash:"GitHash:未知"}'
+            android:textColor="@color/c4"
+            android:textSize="@dimen/t3" />
+
+        <TextView
+            android:id="@+id/tvLabModuleVer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvLabModuleName"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/tvLabModuleHash"
+            android:text='@{moduleInfo.verName.length()>0?"版本号:"+moduleInfo.verName:"版本号:未知"}'
+            android:textColor="@color/c4"
+            android:textSize="@dimen/t3" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@{moduleInfo.debug?R.mipmap.android_debug:R.mipmap.android_release}" />
+    </RelativeLayout>
+</layout>

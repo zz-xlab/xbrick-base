@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <import alias="view" type="android.view.View"/>
+        <variable
+            name="address"
+            type="cn.zzstc.lzm.common.data.entity.ServerAddress" />
+    </data>
+    <RelativeLayout
+        android:paddingStart="@dimen/horizontal_margin"
+        android:paddingEnd="@dimen/horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:textColor="@color/c4"
+            android:text="@{address.url}"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/t2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        </TextView>
+        <ImageView
+            android:visibility="@{address.active?view.VISIBLE:view.GONE}"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/current_active"
+            android:textColor="@color/c4"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/t2"
+            android:layout_width="20dp"
+            android:layout_height="20dp">
+        </ImageView>
+
+    </RelativeLayout>
+
+
+
+</layout>
