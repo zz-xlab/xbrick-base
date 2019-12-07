@@ -29,7 +29,7 @@
 
         <TextView
             android:id="@+id/tvLabModuleHash"
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tvLabModuleName"
             android:layout_marginTop="5dp"
@@ -38,18 +38,19 @@
             android:textSize="@dimen/t3" />
 
         <TextView
+            android:layout_toEndOf="@+id/tvLabModuleHash"
+            android:layout_marginEnd="90dp"
             android:id="@+id/tvLabModuleVer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tvLabModuleName"
-            android:layout_marginStart="50dp"
             android:layout_marginTop="5dp"
-            android:layout_toEndOf="@+id/tvLabModuleHash"
             android:text='@{moduleInfo.verName.length()>0?"版本号:"+moduleInfo.verName:"版本号:未知"}'
             android:textColor="@color/c4"
             android:textSize="@dimen/t3" />
 
         <ImageView
+            android:id="@+id/ivModuleType"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_alignParentEnd="true"

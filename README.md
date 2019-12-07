@@ -43,7 +43,7 @@
 
 8.应用内跳转测试(待实现)
 
-9.模块信息列表(待新增模块构建hash值)
+9.模块信息列表，可显示模块名称，构建类型(debug,release)，git hash值，版本号
 
 ![实验室](https://github.com/zz-xlab/xbrick-app/blob/master/pictures/xlab.png?raw=true)
 
