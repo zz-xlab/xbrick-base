@@ -81,9 +81,10 @@ buildTypes {
 此项目在搭建过程中参考了一些优秀的开源项目，表示感谢。
 
 多模块的application生命周期处理参考：https://github.com/PandaQAQ/PandaMvp
+
 gradle脚本编写参考：https://github.com/JessYanCoding/ArmsComponent
 
 此外本项目中还用到的第三方库：Arouter、EventBus、bga-qrcode-zbar、QMUI、logger、autosize等表示感谢
 
-###其它
+### 其它
 欢迎star及pr
